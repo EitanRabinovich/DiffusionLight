@@ -120,7 +120,7 @@ def get_ball_location(image_data, args):
             
     else:
         # we use top-left corner notation
-        x, y, r = ((args.img_width // 2) - (args.ball_size // 2), (args.img_height // 2) - (args.ball_size // 2), args.ball_size)
+        x, y, r = ((args.img_width // 4) - (args.ball_size // 2), (args.img_height // 4 * 3) - (args.ball_size // 2), args.ball_size)
     return x, y, r
 
 def interpolate_embedding(pipe, args):
